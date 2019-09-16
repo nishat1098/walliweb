@@ -27,6 +27,45 @@ a:hover {
     text-decoration: none;
 }
 
+.fa {
+    padding: 10px;
+    margin: 2px;
+    font-size: 17px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+/* Set a specific color for each brand */
+
+
+/* Facebook */
+
+.fa-facebook {
+    background: none;
+    color: rgb(41, 193, 240);
+}
+
+.fa-twitter {
+    background: none;
+    color: rgb(41, 193, 240);
+}
+
+.fa-instagram {
+    background: none;
+    color: rgb(41, 193, 240);
+}
+
+.fa-pinterest {
+    background: none;
+    color: rgb(41, 193, 240);
+}
+
 .wicked {
     background-color: #0b0b0c;
 }

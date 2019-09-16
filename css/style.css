@@ -27,6 +27,59 @@ a:hover {
     text-decoration: none;
 }
 
+.perf {
+    background: #113247;
+    text-align: center;
+    color: whitesmoke;
+    min-height: 15vh;
+}
+
+.perf p {
+    text-decoration: none;
+    padding-top: 27px;
+    font-size: 35px;
+}
+
+.fa {
+    padding: 10px;
+    margin: 2px;
+    font-size: 17px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    color: #d9e2e9;
+}
+
+
+/* Set a specific color for each brand */
+
+
+/* Facebook */
+
+.fa-facebook {
+    background: none;
+    color: rgb(41, 193, 240);
+}
+
+.fa-twitter {
+    background: none;
+    color: rgb(41, 193, 240);
+}
+
+.fa-instagram {
+    background: none;
+    color: rgb(41, 193, 240);
+}
+
+.fa-pinterest {
+    background: none;
+    color: rgb(41, 193, 240);
+}
+
 .contain-imp {
     background-color: #14405e;
 }
@@ -35,8 +88,12 @@ a:hover {
     color: #000;
 }
 
+.formi {
+    border-color: #000428;
+}
+
 .button {
-    background-color: rgb(10, 235, 186);
+    background-color: #2196f3;
     /* Green */
     border: none;
     color: white;
@@ -45,6 +102,7 @@ a:hover {
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
+    border-radius: 7px;
 }
 
 .button:hover {
@@ -83,6 +141,8 @@ h5,
 .text-blackn {
     color: whitesmoke;
 }
+
+.hul {}
 
 .bg-black {
     background: #000 !important;
