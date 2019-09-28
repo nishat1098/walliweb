@@ -1,0 +1,74 @@
+    body {
+        /*background: linear-gradient(54deg, rgb(224, 230, 240) 40%, rgb(253, 253, 253) 60%);*/
+        background: url(../images/bb1.jpg);
+        opacity: .82;
+    }
+    
+    .contact {
+        padding: 4%;
+        height: 400px;
+    }
+    
+    .col-md-3 {
+        /*background: #0b81e2;*/
+        background: linear-gradient(45deg, #0d4240, rgb(8, 126, 116), rgb(11, 160, 147), rgb(11, 199, 189));
+        padding: 4%;
+        border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+    }
+    
+    .contact-info {
+        margin-top: 10%;
+    }
+    
+    .contact-info img {
+        margin-bottom: 15%;
+    }
+    
+    .contact-info h2 {
+        margin-bottom: 10%;
+    }
+    
+    .col-md-9 {
+        background: #fff;
+        padding: 3%;
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        border: 1px solid #3595e4;
+    }
+    
+    .contact-form label {
+        font-weight: 600;
+    }
+    
+    .contact-form button {
+        background: #0b80ec;
+        color: #fff;
+        font-weight: 600;
+        width: 16%;
+        border-radius: 10px;
+    }
+    
+    .contact-form button:hover {
+        background: #54b5ec;
+        color: whitesmoke;
+    }
+    
+    .contact-form button:focus {
+        box-shadow: none;
+    }
+    
+    .homies {
+        position: absolute;
+        color: aliceblue;
+        left: 85%;
+        top: 90%;
+    }
+    
+    .homies a {
+        color: whitesmoke;
+    }
+    
+    .homies a:hover {
+        color: aliceblue;
+    }
