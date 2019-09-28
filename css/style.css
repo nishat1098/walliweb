@@ -92,7 +92,16 @@ a:hover {
     border-color: #000428;
 }
 
-.button {
+.brand-logo h2 {
+    color: #000428;
+    margin-top: 15px;
+    /*font-size: 72px;*/
+    background: -webkit-linear-gradient(rgb(131, 11, 230), rgb(151, 33, 230), rgb(70, 148, 221), rgb(67, 206, 211));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.button_old {
     background-color: #2196f3;
     /* Green */
     border: none;
@@ -102,15 +111,19 @@ a:hover {
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 7px;
+    border-radius: 0px;
 }
 
-.button:hover {
+.button_old:hover {
     background-color: #3d70df;
 }
 
-.button1 {
-    border-radius: 30px;
+.button_old1 {
+    border-radius: 10px;
+}
+
+.stable a {
+    color: black;
 }
 
 .intro {
