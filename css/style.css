@@ -101,6 +101,14 @@ a:hover {
     -webkit-text-fill-color: transparent;
 }
 
+*:focus {
+    outline: 0 !important;
+}
+
+button:focus {
+    outline: none !important;
+}
+
 .button_old {
     background-color: #2196f3;
     /* Green */
@@ -112,6 +120,7 @@ a:hover {
     font-size: 16px;
     cursor: pointer;
     border-radius: 0px;
+    outline: none;
 }
 
 .button_old:hover {
@@ -122,8 +131,39 @@ a:hover {
     border-radius: 10px;
 }
 
+.button_old:focus {
+    box-shadow: none;
+}
+
+.site-section button:focus {
+    box-shadow: none;
+    outline: none;
+}
+
 .stable a {
     color: black;
+}
+
+nav {
+    position: sticky;
+}
+
+nav ul {
+    position: sticky;
+}
+
+.site-navbar {
+    overflow: hidden;
+    position: sticky;
+}
+
+.sticky {
+    position: sticky;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 60px;
 }
 
 .intro {
