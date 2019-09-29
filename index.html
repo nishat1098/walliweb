@@ -114,7 +114,7 @@
 
 
         <!-- NAVBAR -->
-        <nav class="site-navbar z-depth-0 grey lighten-3 js-sticky-header site-navbar-target" role="banner">
+        <nav class="site-navbar z-depth-0 grey lighten-3  site-navbar-target js-sticky-header">
             <div class="nav-wrapper container">
                 <a href="#" class="brand-logo">
                     <!--<img src="img/logo.svg" style="width: 180px; margin-top: 10px;">-->
@@ -136,8 +136,8 @@
                     <li class="stable">
                         <a href="contact/contact.html">Contact</a>
                     </li>
-                    <li class="stable">
-                        <a href="gallery/index.html">Gallery</a>
+                    <li class="logged-in stable" style="display: none">
+                        <a href="gallery/single.html">Gallery</a>
                     </li>
                     <li class="logged-in" style="display: none">
                         <a href="#" class="black-text modal-trigger" data-target="modal-account">Account</a>
@@ -154,6 +154,9 @@
                     <li class="logged-out" style="display: none">
                         <a href="#" class="black-text modal-trigger" data-target="modal-signup">Sign up</a>
                     </li>
+                    <li id="admin" style="display: none">
+                        <a href="contact/feedback.html">Comments</a>
+                    </li>
                     </span>
                 </ul>
             </div>
@@ -163,8 +166,9 @@
         <div id="modal-signup" class="modal">
             <div class="modal-content">
                 <h4>Sign up</h4><br />
-                <h5>Sign up to access your dash board</h5>
+
                 <form id="signup-form">
+
                     <div class="input-field">
                         <input type="email" id="signup-email" required />
                         <label for="signup-email">Email address</label>
@@ -378,7 +382,7 @@
                             <div class="servics-n">
                                 <h3>Digital art course</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                                <p><a href="#">Learn More</a></p>
+
                             </div>
                         </div>
                     </div>
@@ -388,7 +392,7 @@
                             <div>
                                 <h3>Logo design</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                                <p><a href="#">Learn More</a></p>
+
                             </div>
                         </div>
                     </div>
@@ -398,7 +402,7 @@
                             <div>
                                 <h3>Poster publication</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                                <p><a href="#">Learn More</a></p>
+
                             </div>
                         </div>
                     </div>
@@ -410,7 +414,7 @@
                             <div>
                                 <h3>Art Community Support</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                                <p><a href="#">Learn More</a></p>
+
                             </div>
                         </div>
                     </div>
@@ -420,7 +424,7 @@
                             <div>
                                 <h3>Sell your artworks</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                                <p><a href="#">Learn More</a></p>
+
                             </div>
                         </div>
                     </div>
@@ -430,7 +434,7 @@
                             <div>
                                 <h3>Free courses</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                                <p><a href="#">Learn More</a></p>
+
                             </div>
                         </div>
                     </div>
@@ -649,7 +653,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!--<script src="scripts/nav_navigator.js">
     </script>-->
-
+    <script src="scripts/navbar.js"></script>
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
