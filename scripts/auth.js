@@ -69,5 +69,51 @@ loginForm.addEventListener('submit', (e) => {
         const modal = document.querySelector('#modal-login');
         M.Modal.getInstance(modal).close();
         loginForm.reset();
+    }, err => {
+        let msg;
+        switch (err.code) { // SWITCH THE CODE RETURNED TO SEE WHAT MESSAGE YOU'LL DISPLAY
+            case "auth/wrong-password":
+                msg = "Email or Password is wrong.";
+                loginForm.reset();
+                break;
+
+            case "auth/user-not-found":
+                msg = 'User not found.'
+                loginForm.reset();
+                break;
+
+            case "auth/invalid-email":
+                msg = 'Email or Password is wrong.';
+                loginForm.reset();
+                break;
+        }
+
+        alert(msg);
+
     });
 });
+
+
+/*async login(user: User){
+    this.angfire.auth.signInWithEmailAndPassword(user.email, user.password)
+        .then(res => {
+            this.navCtrl.setRoot(HomeManagerPage);
+        }, err => {
+            let msg;
+            switch (err.code) { // SWITCH THE CODE RETURNED TO SEE WHAT MESSAGE YOU'LL DISPLAY
+                case "auth/wrong-password":
+                    msg = "Email or Password is wrong.";
+                    break;
+
+                case "auth/user-not-found":
+                    msg = 'User not found.'
+                    break;
+
+                case "auth/invalid-email":
+                    msg = 'Email or Password is wrong.';
+                    break;
+            }
+
+            alert(msg);
+        });
+}*/
