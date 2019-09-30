@@ -32,23 +32,3 @@ document.addEventListener('DOMContentLoaded', function() {
     M.Collapsible.init(items);
 
 });
-
-var user;
-var uid;
-firebase.auth().onAuthStateChanged(user => {
-    if (!user) {
-        console.log("nai");
-    } else {
-        user = firebase.auth().currentUser;
-        uid = user.email;
-    }
-
-    if (uid == 'admin@gmail.com') {
-        console.log('its admin');
-        window.location.href = "actual_admin.html";
-
-    } else {
-        console.log('normal user');
-
-    }
-})
