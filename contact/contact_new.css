@@ -1,7 +1,6 @@
     body {
         /*background: linear-gradient(54deg, rgb(224, 230, 240) 40%, rgb(253, 253, 253) 60%);*/
-        background: url(../images/Samurai-Ink-Artwork-2018-Wallpaper-2-1200x600.jpg) no-repeat;
-        opacity: .97;
+        background-color: aliceblue;
     }
     
     .btn {
