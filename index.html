@@ -65,7 +65,7 @@
 
 
 
-    <div class="site-wrap">
+    <div class="site-wrap navbar-fixed">
 
         <div class="site-mobile-menu site-navbar-target">
             <div class="site-mobile-menu-header">
@@ -76,7 +76,7 @@
             <div class="site-mobile-menu-body"></div>
         </div>
 
-        <div class="nish" id="home-section">
+        <!--<div class="nish" id="home-section">
             <div class="container">
                 <div class="row">
                     <div class="col-6 text-left">
@@ -84,39 +84,41 @@
                             <li>
                                 <a href="#" class="fa fa-facebook"></a>
                             </li>
-                            <!-- <li><a href="#" class="p-2"><span class="icon-facebook"></span></a></li> -->
-                            <li>
-                                <a href="#" class="fa fa-twitter"></a>
-                            </li>
-                            <!-- <li><a href="#" class="p-2"><span class="icon-twitter"></span></a></li> -->
-                            <li>
-                                <a href="#" class="fa fa-instagram"></a>
-                            </li>
-                            <!-- <li><a href="#" class="p-2"><span class="icon-instagram"></span></a></li> -->
-                            <li>
-                                <a href="#" class="fa fa-pinterest"></a>
-                            </li>
-                            <!--<li><a href="#" class="p-2"><span class="icon-linkedin"></span></a></li>-->
+                            -- <li><a href="#" class="p-2"><span class="icon-facebook"></span></a></li> -
+        <li>
+            <a href="#" class="fa fa-twitter"></a>
+        </li>
+        -- <li><a href="#" class="p-2"><span class="icon-twitter"></span></a></li> --
+        <li>
+            <a href="#" class="fa fa-instagram"></a>
+        </li>
+        -- <li><a href="#" class="p-2"><span class="icon-instagram"></span></a></li> --
+        <li>
+            <a href="#" class="fa fa-pinterest"></a>
+        </li>
+        --<li><a href="#" class="p-2"><span class="icon-linkedin"></span></a></li>--
 
-                        </ul>
-                    </div>
-                    <div class="col-6">
-                        <p class="mb-0 float-right">
-                            <span class="mr-3"><a href="#"> </span><span class="d-none d-lg-inline-block"></span></a>
-                            </span>
+        </ul>
+    </div>
+    <div class="col-6">
+        <p class="mb-0 float-right">
+            <span class="mr-3"><a href="#"> </span><span class="d-none d-lg-inline-block"></span></a>
+            </span>
 
-                        </p>
+        </p>
 
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
+    </div>
+    </div>
+    </div>-->
 
 
         <!-- NAVBAR -->
-        <nav class="site-navbar z-depth-0 grey lighten-3  site-navbar-target js-sticky-header">
+        <nav class="site-navbar z-depth-0 grey darken-4 site-navbar-target sidenav-trigger">
             <div class="nav-wrapper container">
                 <a href="#" class="brand-logo">
+
+
                     <!--<img src="img/logo.svg" style="width: 180px; margin-top: 10px;">-->
                     <h2>Walli.
 
@@ -128,7 +130,7 @@
                         <a href="#home-section">Home</a>
                     </li>
                     <li class="stable">
-                        <a href="#about-section">About Us</a>
+                        <a href="about/index.html">About Us</a>
                     </li>
                     <li class="stable">
                         <a href="#services-section">Services</a>
@@ -139,20 +141,22 @@
                     <li class="logged-in stable" style="display: none">
                         <a href="gallery/single.html">Gallery</a>
                     </li>
+
                     <li class="logged-in" style="display: none">
-                        <a href="#" class="black-text modal-trigger" data-target="modal-account">Account</a>
+                        <a href="#" class="grey-text" id="logout">Logout</a>
                     </li>
                     <li class="logged-in" style="display: none">
-                        <a href="#" class="black-text" id="logout">Logout</a>
+                        <a href="#" class="grey-text modal-trigger" data-target="modal-account"><i class="fa fa-user trying"></i></a>
                     </li>
+
                     <!--<li class="logged-in">
                         <a href="#" class="grey-text modal-trigger" data-target="modal-create">Create Guide</a>
                     </li>-->
                     <li class="logged-out" style="display: none">
-                        <a href="#" class="black-text modal-trigger" data-target="modal-login">Login</a>
+                        <a href="#" class="stable grey-text  modal-trigger" data-target="modal-login">Login</a>
                     </li>
                     <li class="logged-out" style="display: none">
-                        <a href="#" class="black-text modal-trigger" data-target="modal-signup">Sign up</a>
+                        <a href="#" class="stable grey-text modal-trigger" data-target="modal-signup">Sign up</a>
                     </li>
                     <li id="admin" style="display: none">
                         <a href="contact/feedback.html">Comments</a>
@@ -162,12 +166,19 @@
             </div>
         </nav>
 
+
+
         <!-- SIGN UP MODAL -->
         <div id="modal-signup" class="modal">
             <div class="modal-content">
                 <h4>Sign up</h4><br />
 
                 <form id="signup-form">
+                    <div class="input-field">
+                        <input type="text" id="signup-bio" required />
+                        <label for="signup-bio">Name</label>
+                    </div>
+
 
                     <div class="input-field">
                         <input type="email" id="signup-email" required />
@@ -177,16 +188,18 @@
                         <input type="password" id="signup-password" required />
                         <label for="signup-password">Choose password</label>
                     </div>
+
+
                     <button class="nav-link button_old button_old1">Sign up</button>
                 </form>
             </div>
         </div>
 
         <!-- LOGIN MODAL -->
-        <div id="modal-login" class="modal">
-            <div class="modal-content">
+        <div id="modal-login" class="modal ">
+            <div class="modal-content ">
                 <h4>Login</h4><br />
-
+                <h3>Login to explore more !</h3>
                 <form id="login-form">
                     <div class="input-field">
                         <input type="email" id="login-email" required />
@@ -280,7 +293,7 @@
                         <div class="row mb-4">
                             <div class="col-md-6">
                                 <h1>We Are The Largest Art Community</h1>
-                                <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda ea quo cupiditate facere deleniti fuga officia.</p>
+                                <p class="mb-5">Walli is a large online social community for artists and art enthusiasts, allowing people to connect through the creation and sharing of art.</p>
 
                             </div>
                         </div>
@@ -304,7 +317,9 @@
                         <div class="col-md-5 ml-auto">
                             <h3 class="section-sub-title">About Us</h3>
                             <h2 class="section-title mb-3">Welcome To Walli</h2>
-                            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui fuga ipsa, repellat blanditiis nihil, consectetur. Consequuntur eum inventore, rem maxime, nisi excepturi ipsam libero ratione adipisci alias eius vero vel!</p>
+                            <p class="mb-4">In a creative field like design, we face an undeniable truth: our wells of inspiration are bound to run dry from time to time. In those periods of imaginative downtime, we seek out sources that can help us return the creative
+                                flow to our working process, and get us “back in the game.” But when we need a quick recharge, where do we turn? Many of us have our favorite “go-to” places when we are victim to creative drought, though perhaps with a
+                                little help, our routinely chosen paths could change.</p>
                             <!-- <p><a href="learnmore.html" class="btn btn-primary btn-black--hover">Learn More</a></p>-->
                             <p><a href="about/index.html"><button class="nav-link button_old button_old1">Learn More</button></a></li>
                             </p>
@@ -327,7 +342,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class=" box-with-humber">
                             <h2 class="text-blackn">Think</h2>
-                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et praesentium eos nulla qui commodi consectetur beatae fugiat. Veniam iste rerum perferendis.</p>
+                            <p class="mb-4">A great tactic on the quest for art-based inspiration is to directly tap into the source. Individual artist portfolios seldom cease to amaze</p>
                             <ul class="list-unstyled ul-check primary">
                                 <li>Lorem ipsum dolor sit amet.</li>
                                 <li>Lorem ipsum dolor sit amet.</li>
@@ -339,7 +354,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class=" box-with-humber">
                             <h2 class="text-blackn">Create</h2>
-                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et praesentium eos nulla qui commodi consectetur beatae fugiat. Veniam iste rerum perferendis.</p>
+                            <p class="mb-4">plunge you into a flood of new impressions if you’re willing to invest a little time. By observing artworks of individual artists</p>
                             <ul class="list-unstyled ul-check primary">
                                 <li>Lorem ipsum dolor sit amet.</li>
                                 <li>Lorem ipsum dolor sit amet.</li>
@@ -351,7 +366,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class=" box-with-humber">
                             <h2 class="text-blackn">Share</h2>
-                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et praesentium eos nulla qui commodi consectetur beatae fugiat. Veniam iste rerum perferendis.</p>
+                            <p class="mb-4">you can learn new techniques, compare their work to your work and improve your designing skills.</p>
                             <ul class="list-unstyled ul-check primary">
                                 <li>Lorem ipsum dolor sit amet.</li>
                                 <li>Lorem ipsum dolor sit amet.</li>

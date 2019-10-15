@@ -32,10 +32,19 @@ signupForm.addEventListener('submit', (e) => {
 
     auth.createUserWithEmailAndPassword(email, password).then(cred => {
         //console.log(cred.user);
-
+        return db.collection('user').doc(cred.user.uid).set({
+            bio: signupForm['signup-bio'].value
+        });
+    }).then(() => {
         const modal = document.querySelector('#modal-signup');
         M.Modal.getInstance(modal).close();
         signupForm.reset();
+        /////my mod
+        auth.signOut();
+        //////////////////important/////////////////////
+        const mod = document.querySelector('#modal-login');
+        M.Modal.getInstance(mod).open();
+        //signupForm.reset();
     });
 
 });
