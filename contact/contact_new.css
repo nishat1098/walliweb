@@ -1,91 +1,123 @@
-    body {
-        /*background: linear-gradient(54deg, rgb(224, 230, 240) 40%, rgb(253, 253, 253) 60%);*/
-        background-color: aliceblue;
-    }
-    
-    .btn {
-        background-color: #058cfc;
-        /* Green */
-        border: none;
-        color: white;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        cursor: pointer;
-        border-radius: 10px;
-        outline: none;
-    }
-    
-    .btn:hover {
-        background-color: #3d70df;
-    }
-    
-    .contact {
-        padding: 4%;
-        height: 400px;
-    }
-    
-    .col-md-3 {
-        /*background: #0b81e2;*/
-        background: linear-gradient(45deg, #0d4240, rgb(8, 126, 116), rgb(11, 160, 147), rgb(11, 199, 189));
-        padding: 4%;
-        border-top-left-radius: 0.5rem;
-        border-bottom-left-radius: 0.5rem;
-    }
-    
-    .contact-info {
-        margin-top: 10%;
-    }
-    
-    .contact-info img {
-        margin-bottom: 15%;
-    }
-    
-    .contact-info h2 {
-        margin-bottom: 10%;
-    }
-    
-    .col-md-9 {
-        background: #fff;
-        padding: 3%;
-        border-top-right-radius: 0.5rem;
-        border-bottom-right-radius: 0.5rem;
-        border: 1px solid #3595e4;
-    }
-    
-    .contact-form label {
-        font-weight: 600;
-    }
-    
-    .contact-form button {
-        background: #0b80ec;
-        color: #fff;
-        font-weight: 600;
-        width: 16%;
-        border-radius: 10px;
-    }
-    
-    .contact-form button:hover {
-        background: #54b5ec;
-        color: whitesmoke;
-    }
-    
-    .contact-form button:focus {
-        box-shadow: none;
-    }
-    
-    .homies {
-        position: absolute;
-        color: aliceblue;
-        left: 85%;
-        top: 90%;
-    }
-    
-    .homies a {
-        color: whitesmoke;
-    }
-    
-    .homies a:hover {
-        color: aliceblue;
-    }
+body {
+    /*background: linear-gradient(54deg, rgb(224, 230, 240) 40%, rgb(253, 253, 253) 60%);*/
+    background-color: aliceblue;
+}
+
+.btn {
+    background-color: #058cfc;
+    /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    outline: none;
+}
+
+.btn:hover {
+    background-color: #3d70df;
+}
+
+.contact {
+    padding: 4%;
+    height: 400px;
+}
+
+.col-md-3 {
+    /*background: #0b81e2;*/
+    /*background: linear-gradient(-45deg, rgb(1, 33, 63), rgb(2, 43, 80), rgb(2, 42, 80), rgb(2, 55, 105), rgb(3, 71, 134), rgb(3, 86, 163), rgb(3, 101, 192), rgb(5, 121, 230), rgb(34, 145, 248));*/
+    background: -webkit-linear-gradient(-43deg, rgb(1, 33, 63), rgb(2, 43, 80), rgb(2, 42, 80), rgb(2, 55, 105), rgb(3, 71, 134), rgb(3, 78, 148), rgb(3, 85, 161), rgb(4, 105, 199), rgb(3, 122, 233));
+    padding: 4%;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.contact-info {
+    margin-top: 10%;
+}
+
+.contact-info img {
+    margin-bottom: 15%;
+}
+
+.contact-info h2 {
+    margin-bottom: 10%;
+}
+
+.col-md-9 {
+    background: #fff;
+    padding: 3%;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border: 1px solid #3595e4;
+}
+
+.contact-form label {
+    font-weight: 600;
+}
+
+.contact-form button {
+    background: #0b80ec;
+    color: #fff;
+    font-weight: 600;
+    width: 16%;
+    border-radius: 10px;
+}
+
+.contact-form button:hover {
+    background: #54b5ec;
+    color: whitesmoke;
+}
+
+.contact-form button:focus {
+    box-shadow: none;
+}
+
+.homies {
+    position: absolute;
+    color: aliceblue;
+    left: 85%;
+    top: 90%;
+}
+
+.homies a {
+    color: whitesmoke;
+}
+
+.homies a:hover {
+    color: aliceblue;
+}
+
+.brand-logo h3 {
+    color: #000428;
+    margin-top: 15px;
+    font-size: 30px;
+    background: -webkit-linear-gradient(#FC466B, #3F5EFB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cont-msg h2 {
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+.cont-msg h4 {
+    color: rgb(224, 242, 243);
+    font-size: 20px;
+}
+
+.cont-msg img {
+    height: 190px;
+    width: 200px;
+    padding-right: 20px;
+}
+
+.button-cont {
+    height: 40px;
+    width: 10%;
+    border: none;
+}

@@ -13,7 +13,20 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="contact_new.css">
+
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+
 </head>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
 <body>
     <!--<header>
@@ -54,12 +67,131 @@
     </header>
     <div><br><br><br><br><br><br><br><br>
     </div>-->
+
+    <nav class="site-navbar z-depth-0 grey darken-4 site-navbar-target sidenav-trigger">
+        <div class="nav-wrapper container">
+            <a href="#" class="brand-logo">
+
+
+                <!--<img src="img/logo.svg" style="width: 180px; margin-top: 10px;">-->
+                <h3>Walli.
+
+                </h3>
+
+            </a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li class="stable">
+                    <a href="../index.html">Home</a>
+                </li>
+                <li class="stable">
+                    <a href="#about-section">About Us</a>
+                </li>
+                <li class="stable">
+                    <a href="#services-section">Services</a>
+                </li>
+
+                <li class="logged-in stable" style="display: none">
+                    <a href="../gallery/single.html">Gallery</a>
+                </li>
+
+                <li class="logged-in" style="display: none">
+                    <a href="#" class="grey-text" id="logout">Logout</a>
+                </li>
+                <li class="logged-in" style="display: none">
+                    <a href="#" class="grey-text modal-trigger" data-target="modal-account"><i
+                            class="fa fa-user trying"></i></a>
+                </li>
+
+                <!--<li class="logged-in">
+                            <a href="#" class="grey-text modal-trigger" data-target="modal-create">Create Guide</a>
+                        </li>-->
+                <li class="logged-out" style="display: none">
+                    <a href="#" class="stable grey-text  modal-trigger" data-target="modal-login">Login</a>
+                </li>
+                <li class="logged-out" style="display: none">
+                    <a href="#" class="stable grey-text modal-trigger" data-target="modal-signup">Sign up</a>
+                </li>
+                <li id="admin" style="display: none">
+                    <a href="contact/feedback.html">Comments</a>
+                </li>
+                </span>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!-- SIGN UP MODAL -->
+    <div id="modal-signup" class="modal">
+        <div class="modal-content">
+            <h4>Sign up</h4><br />
+
+            <form id="signup-form">
+
+                <div class="input-field">
+                    <input type="email" id="signup-email" required />
+                    <label for="signup-email">Email address</label>
+                </div>
+                <div class="input-field">
+                    <input type="password" id="signup-password" required />
+                    <label for="signup-password">Choose password</label>
+                </div>
+                <button class="nav-link button_old button_old1">Sign up</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- LOGIN MODAL -->
+    <div id="modal-login" class="modal ">
+        <div class="modal-content ">
+            <h4>Login</h4><br />
+            <h3>Login to explore more !</h3>
+            <form id="login-form">
+                <div class="input-field">
+                    <input type="email" id="login-email" required />
+                    <label for="login-email">Email address</label>
+                </div>
+                <div class="input-field">
+                    <input type="password" id="login-password" required />
+                    <label for="login-password">Your password</label>
+                </div>
+                <button class="nav-link button_old button_old1">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ACCOUNT MODAL -->
+    <div id="modal-account" class="modal">
+        <div class="modal-content center-align">
+            <h4>Account details</h4><br />
+            <div class="account-details"></div>
+        </div>
+    </div>
+
+    <!-- CREATE GUIDE MODAL -->
+    <div id="modal-create" class="modal">
+        <div class="modal-content">
+            <h4>Create Guide</h4><br />
+            <form id="create-form">
+                <div class="input-field">
+                    <input type="text" id="title" required>
+                    <label for="title">Guide Title</label>
+                </div>
+                <div class="input-field">
+                    <textarea id="content" class="materialize-textarea" required></textarea>
+                    <label for="content">Guide Content</label>
+                </div>
+                <button class="nav-link button_old button_old1">Create</button>
+            </form>
+        </div>
+    </div>
+
     <main>
         <div class="container contact">
             <div class="row">
-                <div class="col-md-3">
+                <div class="cont-msg col-md-3">
                     <div class="contact-info">
-                        <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image" />
+                        <img src="../images/img-01.png" />
                         <h2>Contact Us</h2>
                         <h4>We would love to hear from you !</h4>
                     </div>
@@ -93,7 +225,7 @@
                         </div>
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10">
-                                <button type="submit" class="btn btn-default" id="sumbit">Submit</button>
+                                <button type="submit" class="button-cont" id="sumbit">Submit</button>
                             </div>
                         </div>
                     </div>
@@ -102,12 +234,7 @@
         </div>
 
 
-        <div class="homies">
-            <a href="../index.html">
-                <button class="btn">Home</button>
-            </a>
 
-        </div>
 
 
     </main>
@@ -198,12 +325,49 @@
         </div>
     </footer>-->
 
-
-    <!-- FireBase -->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+
     <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-firestore.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAVj04u1pMDUPlRTOtW_LjSCWIqGq-mjVY",
+            authDomain: "walliweb43.firebaseapp.com",
+            databaseURL: "https://walliweb43.firebaseio.com",
+            projectId: "walliweb43",
+            storageBucket: "walliweb43.appspot.com",
+            messagingSenderId: "660140605469",
+            appId: "1:660140605469:web:2fbb83d41a3ed9baef06f4"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+    </script>
+
+    <!-- .site-wrap -->
+    <script src="../scripts/auth.js">
+    </script>
+    <!--<script src="../scripts/index.js">
+    </script>-->
+    <script src="scripts/for_admin.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--<script src="scripts/nav_navigator.js">
+        </script>-->
+    <script src="../scripts/navbar.js"></script>
+
+
+    <!-- FireBase -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+
     <!-- FireBase End-->
     <!--<script src="app.js"></script>-->
     <!--<script src="script.js"></script>-->

@@ -13,26 +13,79 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="feedback.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 
-    <br><br><br>
-    <table class="table">
-        <thead class="thead-dark">
-            <tr>
-                <th scope="col md-6">No.</th>
-                <th scope="col md-6">Name</th>
-                <th scope="col md-6">Email</th>
-                <th scope="col md-6">Subject</th>
-                <th scope="col md-6">Comment</th>
+    <div class="site-wrap navbar-fixed">
 
-            </tr>
-        </thead>
-        <tbody id="tbody">
+        <div class="site-mobile-menu site-navbar-target">
+            <div class="site-mobile-menu-header">
+                <div class="site-mobile-menu-close mt-3">
+                    <span class="icon-close2 js-menu-toggle"></span>
+                </div>
+            </div>
+            <div class="site-mobile-menu-body"></div>
+        </div>
 
-        </tbody>
-    </table>
+        <nav class="site-navbar z-depth-0 grey darken-4 site-navbar-target sidenav-trigger">
+            <div class="nav-wrapper container">
+                <a href="#" class="brand-logo">
+
+
+                    <!--<img src="img/logo.svg" style="width: 180px; margin-top: 10px;">-->
+                    <h4>Walli.
+
+                    </h4>
+
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li class="stable">
+                        <a href="../actual_admin.html">Admin-page</a>
+                    </li>
+
+
+                    <li class="logged-in">
+                        <a href="#" class="grey-text" id="logout">Logout</a>
+                    </li>
+
+
+                    <!--<li class="logged-in">
+                            <a href="#" class="grey-text modal-trigger" data-target="modal-create">Create Guide</a>
+                        </li>-->
+
+                    </span>
+                </ul>
+            </div>
+        </nav>
+
+
+        <br><br><br>
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col md-6">No.</th>
+                    <th scope="col md-6">Name</th>
+                    <th scope="col md-6">Email</th>
+                    <th scope="col md-6">Subject</th>
+                    <th scope="col md-6">Comment</th>
+
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+
+    </div>
 
     <!-- FireBase -->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -43,6 +96,8 @@
 
     <script src="scripts/firebase.js"></script>
     <script src="scripts/feedback.js"></script>
+
+    <
 
 </body>
 
